@@ -1,0 +1,21 @@
+By default, SSH on Ubuntu comes configured in a way that disables the root users log in. 
+This was originally enabled as a security precaution which means that you cannot directly log in as the root user over SSH. 
+However, you can usually get around the need for root ssh login by using the sudo command. 
+In some cases, though it’s just more convenient to get directly logged in as root.
+
+Enable root login over SSH
+
+1. vim /etc/ssh/sshd_config
+2. PermitRootLogin yes  (add this line anyhwere)
+3. systemctl restart sshd
+4.PermitRootLogin without-password
+
+to password less login we have to add (PasswordAuthentication yes) to sshd_config file 
+
+reference links:- https://www.liquidweb.com/kb/enable-root-login-via-ssh/#:~:text=By%20default%2C%20SSH%20on%20Ubuntu,by%20using%20the%20sudo%20command.
+
+https://askubuntu.com/questions/115151/how-to-set-up-passwordless-ssh-access-for-root-user#:~:text=On%20the%20client%20(where%20you%20ssh%20FROM)&text=When%20you%20are%20prompted%20for,to%20ssh%20into%20the%20server.
+
+--For SSH Troubleshooting--
+
+https://phoenixnap.com/kb/ssh-permission-denied-publickey
