@@ -3,8 +3,8 @@ https://superuser.com/questions/137538/how-to-access-a-network-folder-in-ubuntu-
         
 
 SSLCertificateFile /etc/apache2/ssl/7fad8e633c2f4e7f.crt
-        SSLCertificateKeyFile /etc/apache2/ssl/iot.mindteck.com.key
+        SSLCertificateKeyFile /etc/apache2/ssl/iot.techno.com.key
         SSLCertificateChainFile /etc/apache2/ssl/gd_bundle-g2-g1.crt
-        ServerName iot.mindteck.com
+        ServerName iot.techno.com
         
 
